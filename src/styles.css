@@ -88,3 +88,15 @@ footer {
   aspect-ratio: 4/3;
   object-fit: cover;
 }
+
+.highlights {
+  margin-top: 40px;
+}
+
+.highlights a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+}

@@ -6,6 +6,7 @@
     <title>Hello World</title>
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="app.js"></script>
+    <script type="module" src="index.js"></script>
 </head>
 <body>
     <include src="src/header.html"></include>
@@ -19,7 +20,15 @@
             suiza desde una perspectiva accesible y cercana.</p>
 
 
-        <h2>Recetas destacadas</h2>
+        <div class="highlights">
+            <h2>Recetas destacadas</h2>
+            <div id="recipe-grid" class="recipe-grid"> 
+                <!-- Receipts dynamically loaded from JS-->
+            </div>
+
+            <a href="recipes.html" class="button">Ver todas las recetas</a>
+        </div>
+ 
     </main>
 
     <include src="src/footer.html"></include>    
