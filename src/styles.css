@@ -22,25 +22,36 @@ main {
   padding: 1rem;
 }
 
-nav {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  background-color: #fabada;
+  background-color: red;
+  color: white;
   padding: 0 1rem;
 }
 
-nav ul {
+header .page-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header .page-title img {
+  max-width: 20px;
+}
+
+header nav ul {
   display: flex;
   list-style: none;
   gap: 1rem;
   justify-content: flex-end;
 }
 
-nav ul a {
+header a {
   text-decoration: none;
-  color: #333;
+  color: white;
 }
 
 footer {
@@ -48,4 +59,32 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
+}
+
+.recipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.recipe-card p {
+  flex: 1;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 5;
+  aspect-ratio: 4/3;
+  object-fit: cover;
 }
