@@ -1,0 +1,22 @@
+{
+    "recipes": [
+      {
+        "title": "Fondue de queso",
+        "image": "/images/fondue.jpg",
+        "alt": "Imagen de una fondue de queso",
+        "description": "Consiste en queso derretido servido en una olla caliente, en el que se sumergen trozos de pan u otros alimentos.",
+      },
+      {
+        "title": "Rösti",
+        "image": "/images/roesti.jpg",
+        "alt": "Imagen de un plato de Roesti",
+        "description": "Se elabora principalmente con patatas que suelen mezclarse con algunas grasas de origen animal.",
+      },
+      {
+        "title": "Gerstensuppe",
+        "image": "/images/Gerstensuppe.jpg",
+        "alt": "Imagen de un plato de Gerstensuppe",
+        "description": "Sopa espesa de varias culturas europeas, consistente principalmente en cebada.",
+      }
+    ]
+}
