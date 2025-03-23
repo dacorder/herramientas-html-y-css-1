@@ -16,9 +16,64 @@
       },
       {
         "title": "Gerstensuppe",
-        "image": "/images/Gerstensuppe.jpg",
+        "image": "/images/gerstensuppe.jpg",
         "alt": "Imagen de un plato de Gerstensuppe",
         "description": "Sopa espesa de varias culturas europeas, consistente principalmente en cebada."
+      },
+      {
+        "title": "Raclette",
+        "image": "/images/raclette.jpg",
+        "alt": "Imagen de un plato de Raclette",
+        "description": "Queso del mismo nombre que se derrite y se sirve sobre papas cocidas, pepinillos, cebollitas y a veces jamón o carne seca."
+      },
+      {
+        "title": "Älplermagronen",
+        "image": "/images/aelplermagronen.jpg",
+        "alt": "Imagen de un plato de Älplermagronen",
+        "description": "Una especie de macarrones con queso suizo, papas, cebolla caramelizada y a veces tocino. Se acompaña con compota de manzana."
+      },
+      {
+        "title": "Bündner Nusstorte",
+        "image": "/images/nusstorte.jpg",
+        "alt": "Imagen de una tarta de nuez de los Grisones",
+        "description": "Tarta de nuez del cantón de los Grisones (Graubünden), rellena con un caramelo de nuez espeso.",
+        "highlighted": true
+      },
+      {
+        "title": "Basler Läckerli",
+        "image": "/images/leckerli.jpg",
+        "alt": "Imagen de galletas Läckerli",
+        "description": "Galletas duras de miel, nueces y especias, típicas de Basilea."
+      },
+      {
+        "title": "Bircher Müesli",
+        "image": "/images/muesli.jpg",
+        "alt": "Imagen de un plato de Bircher Müesli",
+        "description": "Mezcla de copos de avena, frutas y frutos secos, aderezada con yogur y miel."
+      },
+      {
+        "title": "Fondue chinoise",
+        "image": "/images/fondue-chinoise.jpg",
+        "alt": "Imagen de una fondue chinoise",
+        "description": "Consiste en cocinar finas láminas de carne en un caldo hirviendo, y acompañarlas con salsas."
+      },
+      {
+        "title": "Zürcher Geschnetzeltes",
+        "image": "/images/geschnetzeltes.jpg",
+        "alt": "Imagen de un plato de Zürcher Geschnetzeltes",
+        "description": "Tiras de ternera cocinadas en una salsa cremosa de vino blanco y setas, acompañadas de rösti."
+      },
+      {
+        "title": "Tête de Moine",
+        "image": "/images/tete-de-moine.jpg",
+        "alt": "Imagen de un plato de Tête de Moine",
+        "description": "Queso suizo de leche cruda de vaca, que se sirve en finas rosetas raspadas con un cuchillo especial."
+      },
+      {
+        "title": "Zuger Kirschtorte",
+        "image": "/images/kirschtorte.jpg",
+        "alt": "Imagen de una tarta de cerezas de Zug",
+        "description": "Tarta de cerezas de Zug, rellena de crema y bañada en licor de cerezas."
       }
     ]
 }
