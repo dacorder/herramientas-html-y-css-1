@@ -1,0 +1,155 @@
+// === COLORS ===
+$color-primary: #f00;
+$color-secondary: #fff;
+$color-muted: #ccc;
+$color-surface: #333;
+
+// === SPACING ===
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+
+// === BORDER RADIUS ===
+$radius-sm: 5px;
+$radius-md: 10px;
+
+// === DEFINE MEDIA QUERIES ===
+@mixin respond-tablet {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin respond-desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+ 
+// === GLOBAL STYLES ===
+
+/* Reset default spacing on all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: $spacing-md;
+}
+
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: $color-primary;
+    color: $color-secondary;
+    padding: 0 1rem;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: $spacing-md;
+      justify-content: flex-end;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .page-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      max-width: 20px;
+    }
+  }
+} 
+
+footer {
+  background-color: $color-surface;
+  color: $color-secondary;
+  text-align: center;
+  padding: 1rem;
+}
+
+.recipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid $color-muted;
+  border-radius: $radius-md;
+
+  h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    border-radius: $radius-sm;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+
+  p {
+    flex: 1;
+  }
+}
+
+.highlights {
+  margin-top: 40px;
+
+  a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    color: $color-surface;
+  }
+}
+
+/* Estilos para Tablet */
+@include respond-tablet {
+  .recipe-card {
+    flex: 0 1 calc(50% - 20px); /* Ocupa el 50% menos el espacio del gap */
+  }
+}
+
+/* Estilos para Desktop */
+@include respond-desktop {
+  .recipe-card {
+    flex: 0 1 calc(33% - 20px); /* Ocupa el 33% menos el espacio del gap */
+  }
+}
