@@ -66,16 +66,17 @@ footer {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .recipe-card {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 10px;
-  max-width: 300px;
 }
 
 .recipe-card h2 {
@@ -105,4 +106,21 @@ footer {
   align-items: center;
   padding: 10px;
   color: #333;
+}
+
+
+/* Estilos para Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .recipe-card {
+    flex: 0 1 calc(50% - 20px); /* Ocupa el 50% menos el espacio del gap */
+  }
+}
+
+/* Estilos para Desktop */
+@media (min-width: 1025px) {
+
+  .recipe-card {
+    flex: 0 1 calc(33% - 20px); /* Ocupa el 33% menos el espacio del gap */
+  }
 }
