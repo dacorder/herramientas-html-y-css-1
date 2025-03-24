@@ -10,6 +10,7 @@ links.forEach((link) => {
   }
 });
 
+// Open and close the mobile menu
 const menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", () => {
   const menu = document.querySelector("nav ul");

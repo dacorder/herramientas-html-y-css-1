@@ -213,6 +213,10 @@ h1 {
 .links {
   list-style: none;
 
+  ul {
+    margin-bottom: 20px;
+  }
+
   li {
     display: flex;
     align-items: center;
@@ -221,6 +225,10 @@ h1 {
       width: 20px;
       height: 20px;
     }
+  }
+  
+  h2 {
+    margin-bottom: 20px;
   }
 }
 
@@ -279,6 +287,13 @@ h1 {
   p, ul, ol {
     margin-left: 40px;
   }
+
+  iframe {
+    border: none;
+    width: 90%;
+    aspect-ratio: 16/9;
+    margin-top: 20px;
+  }
 }
 
 /* Estilos para Tablet */
@@ -309,6 +324,12 @@ h1 {
 
   .details {
     img {
+      max-width: 480px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    iframe {
       max-width: 480px;
       display: block;
       margin: 0 auto;
@@ -359,6 +380,10 @@ h1 {
 
   .details {
     img {
+      max-width: 480px;
+    }
+
+    iframe {
       max-width: 480px;
     }
   }
