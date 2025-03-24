@@ -5,9 +5,9 @@ $color-muted: #ccc;
 $color-surface: #333;
 
 // === SPACING ===
-$spacing-sm: 0.5rem;
-$spacing-md: 1rem;
-$spacing-lg: 2rem;
+$spacing-sm: 5px;
+$spacing-md: 20px;
+$spacing-lg: 50px;
 
 // === BORDER RADIUS ===
 $radius-sm: 5px;
@@ -71,8 +71,8 @@ header {
 
     .menu-button {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: $spacing-md;
+      right: $spacing-md;
     }
 
     p {
@@ -82,7 +82,7 @@ header {
 
     a {
       text-decoration: none;
-      color: white;
+      color: $color-secondary;
     }
 
     ul {
@@ -95,7 +95,7 @@ header {
       width: 100%;
       display: none;
       border-top: 2px solid $color-secondary;
-      padding-top: 20px;
+      padding-top: $spacing-md;
 
       li {        
         display: flex;
@@ -147,7 +147,7 @@ footer {
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-style: dotted;
-    color: white;
+    color: $color-secondary;
 
     &:hover {
       text-decoration: underline;
@@ -166,8 +166,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: $spacing-md;
   justify-content: center;
 }
 
@@ -191,11 +191,15 @@ h1 {
     }
   }
 
-  img {
+  .image-link {
     width: 100%;
-    border-radius: $radius-sm;
-    aspect-ratio: 4/3;
-    object-fit: cover;
+    
+    img {
+      width: 100%;
+      border-radius: $radius-sm;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
   }
 
   p {
@@ -205,6 +209,10 @@ h1 {
 
 .highlights {
   margin-top: 40px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
 }
 
 .links {
@@ -294,7 +302,7 @@ h1 {
     background-color: $color-primary;
     color: $color-secondary;
     border: none;
-    padding: 5px 5px;
+    padding: $spacing-sm;
     cursor: pointer;
     z-index: 10;
   }
