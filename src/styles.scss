@@ -63,6 +63,11 @@ header {
     color: $color-secondary;
     padding: $spacing-md;
 
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
     a {
       text-decoration: none;
       color: white;
@@ -100,7 +105,7 @@ header {
       max-width: 20px;
     }
   }
-} 
+}
 
 footer {
   background-color: $color-surface;
@@ -123,6 +128,12 @@ footer {
       text-decoration-style: dotted;
     }
   }
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: $spacing-lg;
+  margin-bottom: $spacing-md;
 }
 
 .recipe-grid {
@@ -201,8 +212,14 @@ footer {
     }
   }
 
-  .highlights .recipe-grid {
-    justify-content: flex-start;
+  .highlights {
+    .recipe-grid {
+      justify-content: flex-start;
+    }
+
+    .recipe-card {
+      flex: 0 1 calc(25% - 20px); /* Ocupa el 33% menos el espacio del gap */
+    }
   }
 
   .recipe-card {

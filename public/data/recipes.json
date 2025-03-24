@@ -66,13 +66,15 @@
         "title": "Tête de Moine",
         "image": "/images/tete-de-moine.jpg",
         "alt": "Imagen de un plato de Tête de Moine",
-        "description": "Queso suizo de leche cruda de vaca, que se sirve en finas rosetas raspadas con un cuchillo especial."
+        "description": "Queso suizo de leche cruda de vaca, que se sirve en finas rosetas raspadas con un cuchillo especial.",
+        "highlighted": true
       },
       {
         "title": "Zuger Kirschtorte",
         "image": "/images/kirschtorte.jpg",
         "alt": "Imagen de una tarta de cerezas de Zug",
-        "description": "Tarta de cerezas de Zug, rellena de crema y bañada en licor de cerezas."
+        "description": "Tarta de cerezas de Zug, rellena de crema y bañada en licor de cerezas.",
+        "highlighted": true
       }
     ]
 }
