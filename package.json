@@ -22,6 +22,7 @@
     "rimraf": "^6.0.1"
   },
   "dependencies": {
-    "feather-icons": "^4.29.2"
+    "feather-icons": "^4.29.2",
+    "siema": "^1.5.1"
   }
 }

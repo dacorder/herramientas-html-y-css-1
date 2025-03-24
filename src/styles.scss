@@ -278,10 +278,36 @@ h1 {
     }
   }
 
-  img {
+  .image-gallery {
+    position: relative;
     width: 100%;
-    border-radius: $radius-md;
-    margin-bottom: $spacing-md;
+    margin: 0 auto;
+  }
+
+  .siema img {
+    width: 100%;
+    display: block;
+  }
+
+  .image-gallery-nav {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $color-primary;
+    color: $color-secondary;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .image-gallery-nav.prev {
+    left: 10px;
+  }
+
+  .image-gallery-nav.next {
+    right: 10px;
   }
 
   p, ul, ol {
@@ -323,7 +349,8 @@ h1 {
   }
 
   .details {
-    img {
+
+    .image-gallery {
       max-width: 480px;
       display: block;
       margin: 0 auto;
@@ -379,8 +406,9 @@ h1 {
   }
 
   .details {
-    img {
+    .image-gallery {
       max-width: 480px;
+      margin: 0;
     }
 
     iframe {
