@@ -21,5 +21,8 @@
     "parcel-reporter-static-files-copy": "^1.5.3",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "feather-icons": "^4.29.2"
   }
 }
