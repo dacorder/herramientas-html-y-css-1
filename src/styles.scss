@@ -65,7 +65,7 @@ header {
     height: 100%;
     background-color: $color-primary;
     color: $color-secondary;
-    padding: $spacing-md;
+    padding: $spacing-md $spacing-lg;
 
     p {
       font-size: 1.5rem;
@@ -241,6 +241,31 @@ h1 {
   }
 }
 
+.details {
+  margin-bottom: $spacing-lg;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    margin-top: 20px;
+  
+    .feather {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: $radius-md;
+  }
+
+  p, ul, ol {
+    margin-left: 40px;
+  }
+}
+
 /* Estilos para Tablet */
 @include respond-tablet {
   header nav {
@@ -260,6 +285,14 @@ h1 {
   .recipe-card {
     flex: 0 1 calc(50% - 20px); /* Ocupa el 50% menos el espacio del gap */
   }
+
+  .details {
+    img {
+      max-width: 480px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
 
 /* Estilos para Desktop */
@@ -278,6 +311,11 @@ h1 {
     }
   }
 
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .highlights {
     .recipe-grid {
       justify-content: flex-start;
@@ -290,6 +328,12 @@ h1 {
 
   .recipe-card {
     flex: 0 1 calc(33% - 20px); /* Ocupa el 33% menos el espacio del gap */
+  }
+
+  .details {
+    img {
+      max-width: 480px;
+    }
   }
 
   footer {
