@@ -133,7 +133,9 @@ footer {
   }
 
   a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-style: dotted;
     color: white;
 
     &:hover {
@@ -218,6 +220,16 @@ h1 {
     &:hover {
       color: $color-primary;
     }
+  }
+}
+
+.external-link {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: $color-surface;
+
+  &:hover {
+    background-color: $color-muted;
   }
 }
 
