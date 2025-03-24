@@ -9,3 +9,9 @@ links.forEach((link) => {
     link.classList.add("active");
   }
 });
+
+const menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", () => {
+  const menu = document.querySelector("nav ul");
+  menu.classList.toggle("open");
+});

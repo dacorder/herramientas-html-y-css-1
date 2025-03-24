@@ -57,6 +57,7 @@ main {
 }
 
 header {
+
   nav {
     display: flex;
     flex-direction: column;
@@ -66,6 +67,13 @@ header {
     background-color: $color-primary;
     color: $color-secondary;
     padding: $spacing-md $spacing-lg;
+    position: relative;
+
+    .menu-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
 
     p {
       font-size: 1.5rem;
@@ -84,6 +92,8 @@ header {
       gap: $spacing-md;
       justify-content: flex-end;
       text-align: center;
+      width: 100%;
+      display: none;
 
       li {        
         display: flex;
@@ -100,6 +110,10 @@ header {
         &:hover {
           cursor: pointer;
         }
+      }
+
+      &.open {
+        display: flex;
       }
     }
 
@@ -276,11 +290,17 @@ h1 {
 
     ul {
       flex-direction: row;
+      display: flex;
+      flex: 0;
     }
 
     hr {
       display: none;
     }
+  }
+
+  .menu-button {
+    display: none;
   }
 
   .recipe-card {
@@ -305,11 +325,17 @@ h1 {
 
     ul {
       flex-direction: row;
+      display: flex;
+      flex: 0;
     }
 
     hr {
       display: none;
     }
+  }
+
+  .menu-button {
+    display: none;
   }
 
   main {
