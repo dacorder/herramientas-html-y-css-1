@@ -173,6 +173,11 @@ h1 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 
   img {
