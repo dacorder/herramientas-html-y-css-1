@@ -1,20 +1,6 @@
 {
     "recipes": [
       {
-        "title": "Fondue de queso",
-        "image": "/images/fondue.jpg",
-        "alt": "Imagen de una fondue de queso",
-        "description": "Consiste en queso derretido servido en una olla caliente, en el que se sumergen trozos de pan u otros alimentos.",
-        "highlighted": true
-      },
-      {
-        "title": "Rösti",
-        "image": "/images/roesti.jpg",
-        "alt": "Imagen de un plato de Roesti",
-        "description": "Se elabora principalmente con patatas que suelen mezclarse con algunas grasas de origen animal.",
-        "highlighted": true
-      },
-      {
         "title": "Gerstensuppe",
         "image": "/images/gerstensuppe.jpg",
         "alt": "Imagen de un plato de Gerstensuppe",
@@ -61,20 +47,6 @@
         "image": "/images/geschnetzeltes.jpg",
         "alt": "Imagen de un plato de Zürcher Geschnetzeltes",
         "description": "Tiras de ternera cocinadas en una salsa cremosa de vino blanco y setas, acompañadas de rösti."
-      },
-      {
-        "title": "Tête de Moine",
-        "image": "/images/tete-de-moine.jpg",
-        "alt": "Imagen de un plato de Tête de Moine",
-        "description": "Queso suizo de leche cruda de vaca, que se sirve en finas rosetas raspadas con un cuchillo especial.",
-        "highlighted": true
-      },
-      {
-        "title": "Zuger Kirschtorte",
-        "image": "/images/kirschtorte.jpg",
-        "alt": "Imagen de una tarta de cerezas de Zug",
-        "description": "Tarta de cerezas de Zug, rellena de crema y bañada en licor de cerezas.",
-        "highlighted": true
       }
     ]
 }

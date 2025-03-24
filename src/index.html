@@ -3,7 +3,6 @@
 <head>
     <include src="src/head.html"></include>
     <title>La cocina Suiza</title>
-    <script type="module" src="index.js"></script>
 </head>
 <body>
     <include src="src/header.html"></include>
@@ -21,11 +20,42 @@
             suiza desde una perspectiva accesible y cercana.
         </p>
 
-
         <div class="highlights">
             <h2>Recetas destacadas</h2>
             <div id="recipe-grid" class="recipe-grid"> 
-                <!-- Receipts dynamically loaded from JS-->
+
+                <include src="src/recipe-card.html" locals='{
+                    "title": "Fondue de queso",
+                    "image": "./images/fondue.jpg",
+                    "alt": "Fondue de queso",
+                    "description": "Consiste en queso derretido servido en una olla caliente, en el que se sumergen trozos de pan u otros alimentos.",
+                    "link": "./fondue-de-queso.html"
+                }'></include>
+
+                <include src="src/recipe-card.html" locals='{
+                    "title": "Rösti",
+                    "image": "./images/roesti.jpg",
+                    "alt": "Plato de Roesti",
+                    "description": "Se elabora principalmente con patatas que suelen mezclarse con algunas grasas de origen animal.",
+                    "link": "./roesti.html"
+                }'></include>
+
+                <include src="src/recipe-card.html" locals='{
+                    "title": "Tête de Moine",
+                    "image": "./images/tete-de-moine.jpg",
+                    "alt": "Plato de Tête de Moine",
+                    "description": "Queso suizo de leche cruda de vaca, que se sirve en finas rosetas raspadas con un cuchillo especial.",
+                    "link": "#"
+                }'></include>
+
+                <include src="src/recipe-card.html" locals='{
+                    "title": "Zuger Kirschtorte",
+                    "image": "./images/kirschtorte.jpg",
+                    "alt": "Tarta de cerezas de Zug",
+                    "description": "Tarta de cerezas de Zug, rellena de crema y bañada en licor de cerezas.",
+                    "link": "#"
+                }'></include>
+        
             </div>
 
             <a href="recipes.html" class="button">Ver todas las recetas</a>
