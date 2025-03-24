@@ -81,18 +81,23 @@ header {
       justify-content: flex-end;
       text-align: center;
 
-      li {
+      li {        
         .active {
           font-weight: bold;
           text-decoration: underline;
+          text-decoration-thickness: 3px;
+          text-underline-offset: 8px;
         }
 
         &:hover {
           cursor: pointer;
-          text-decoration: underline;
-          text-decoration-style: dotted;
         }
       }
+    }
+
+    hr {
+      color: white;
+      width: 100%;
     }
   }
 
@@ -193,6 +198,10 @@ h1 {
     ul {
       flex-direction: row;
     }
+
+    hr {
+      display: none;
+    }
   }
 
   .recipe-card {
@@ -210,6 +219,10 @@ h1 {
     ul {
       flex-direction: row;
     }
+
+    hr {
+      display: none;
+    }
   }
 
   .highlights {
@@ -218,7 +231,7 @@ h1 {
     }
 
     .recipe-card {
-      flex: 0 1 calc(25% - 20px); /* Ocupa el 33% menos el espacio del gap */
+      flex: 0 1 calc(25% - 20px); /* Ocupa el 25% menos el espacio del gap */
     }
   }
 
