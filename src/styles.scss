@@ -94,6 +94,8 @@ header {
       text-align: center;
       width: 100%;
       display: none;
+      border-top: 2px solid $color-secondary;
+      padding-top: 20px;
 
       li {        
         display: flex;
@@ -115,11 +117,6 @@ header {
       &.open {
         display: flex;
       }
-    }
-
-    hr {
-      color: white;
-      width: 100%;
     }
   }
 
@@ -333,10 +330,7 @@ h1 {
       flex-direction: row;
       display: flex;
       flex: 0;
-    }
-
-    hr {
-      display: none;
+      border-top: none;
     }
   }
 
@@ -375,10 +369,7 @@ h1 {
       flex-direction: row;
       display: flex;
       flex: 0;
-    }
-
-    hr {
-      display: none;
+      border-top: none;
     }
   }
 
