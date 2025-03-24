@@ -24,22 +24,19 @@
         "title": "Raclette",
         "image": "/images/raclette.jpg",
         "alt": "Imagen de un plato de Raclette",
-        "description": "Queso del mismo nombre que se derrite y se sirve sobre papas cocidas, pepinillos, cebollitas y a veces jamón o carne seca.",
-        "highlighted": true
+        "description": "Queso del mismo nombre que se derrite y se sirve sobre papas cocidas, pepinillos, cebollitas y a veces jamón o carne seca."
       },
       {
         "title": "Älplermagronen",
         "image": "/images/aelplermagronen.jpg",
         "alt": "Imagen de un plato de Älplermagronen",
-        "description": "Una especie de macarrones con queso suizo, papas, cebolla caramelizada y a veces tocino. Se acompaña con compota de manzana.",
-        "highlighted": true
+        "description": "Una especie de macarrones con queso suizo, papas, cebolla caramelizada y a veces tocino. Se acompaña con compota de manzana."
       },
       {
         "title": "Bündner Nusstorte",
         "image": "/images/nusstorte.jpg",
         "alt": "Imagen de una tarta de nuez de los Grisones",
-        "description": "Tarta de nuez del cantón de los Grisones (Graubünden), rellena con un caramelo de nuez espeso.",
-        "highlighted": true
+        "description": "Tarta de nuez del cantón de los Grisones (Graubünden), rellena con un caramelo de nuez espeso."
       },
       {
         "title": "Basler Läckerli",
@@ -75,8 +72,7 @@
         "title": "Zuger Kirschtorte",
         "image": "/images/kirschtorte.jpg",
         "alt": "Imagen de una tarta de cerezas de Zug",
-        "description": "Tarta de cerezas de Zug, rellena de crema y bañada en licor de cerezas.",
-        "highlighted": true
+        "description": "Tarta de cerezas de Zug, rellena de crema y bañada en licor de cerezas."
       }
     ]
 }

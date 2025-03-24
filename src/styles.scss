@@ -107,12 +107,28 @@ footer {
   color: $color-secondary;
   text-align: center;
   padding: 1rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+  }
 }
 
 .recipe-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   margin-top: 20px;
   justify-content: center;
 }
@@ -185,7 +201,29 @@ footer {
     }
   }
 
+  .highlights .recipe-grid {
+    justify-content: flex-start;
+  }
+
   .recipe-card {
     flex: 0 1 calc(33% - 20px); /* Ocupa el 33% menos el espacio del gap */
+  }
+
+  footer {
+    ul {
+      flex-direction: row;
+      list-style: none;
+      justify-content: center;
+    }
+
+    li::after {
+      content: "|";
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
+
+    li:last-child::after {
+      content: "";
+    }
   }
 }
