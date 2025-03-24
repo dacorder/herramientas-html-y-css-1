@@ -3,7 +3,6 @@
 <head>
     <include src="src/head.html"></include>
     <title>Recetas</title>
-    <script type="module" src="recipes.js"></script>
 </head>
 <body>
     <include src="src/header.html"></include>
@@ -12,7 +11,102 @@
         <h1>Recetas</h1>
 
         <div id="recipe-grid" class="recipe-grid"> 
-           <!-- Receipts dynamically loaded from JS-->
+            <include src="src/recipe-card.html" locals='{
+                "title": "Fondue de queso",
+                "image": "./images/fondue.jpg",
+                "alt": "Fondue de queso",
+                "description": "Consiste en queso derretido servido en una olla caliente, en el que se sumergen trozos de pan u otros alimentos.",
+                "link": "./fondue-de-queso.html"
+            }'></include>
+
+            <include src="src/recipe-card.html" locals='{
+                "title": "Rösti",
+                "image": "./images/roesti.jpg",
+                "alt": "Plato de Roesti",
+                "description": "Se elabora principalmente con patatas que suelen mezclarse con algunas grasas de origen animal.",
+                "link": "./roesti.html"
+            }'></include>
+
+            <include src="src/recipe-card.html" locals='{
+                "title": "Tête de Moine",
+                "image": "./images/tete-de-moine.jpg",
+                "alt": "Plato de Tête de Moine",
+                "description": "Queso suizo de leche cruda de vaca, que se sirve en finas rosetas raspadas con un cuchillo especial.",
+                "link": "#"
+            }'></include>
+
+            <include src="src/recipe-card.html" locals='{
+                "title": "Zuger Kirschtorte",
+                "image": "./images/kirschtorte.jpg",
+                "alt": "Cerezas de Zug",
+                "description": "Tarta de cerezas de Zug, rellena de crema y bañada en licor de cerezas.",
+                "link": "#"
+            }'></include>
+
+            <include src="src/recipe-card.html" locals='{
+                "title": "Gerstensuppe",
+                "image": "./images/gerstensuppe.jpg",
+                "alt": "Plato de Gerstensuppe",
+                "description": "Sopa espesa de varias culturas europeas, consistente principalmente en cebada.",
+                "link": "#"
+              }'></include>
+              
+              <include src="src/recipe-card.html" locals='{
+                "title": "Raclette",
+                "image": "./images/raclette.jpg",
+                "alt": "Plato de Raclette",
+                "description": "Queso del mismo nombre que se derrite y se sirve sobre papas cocidas, pepinillos, cebollitas y a veces jamón o carne seca.",
+                "link": "#"
+              }'></include>
+              
+              <include src="src/recipe-card.html" locals='{
+                "title": "Älplermagronen",
+                "image": "./images/aelplermagronen.jpg",
+                "alt": "Plato de Älplermagronen",
+                "description": "Una especie de macarrones con queso suizo, papas, cebolla caramelizada y a veces tocino. Se acompaña con compota de manzana.",
+                "link": "#"
+              }'></include>
+              
+              <include src="src/recipe-card.html" locals='{
+                "title": "Bündner Nusstorte",
+                "image": "./images/nusstorte.jpg",
+                "alt": "Tarta de nuez de los Grisones",
+                "description": "Tarta de nuez del cantón de los Grisones (Graubünden), rellena con un caramelo de nuez espeso.",
+                "link": "#"
+              }'></include>
+              
+              <include src="src/recipe-card.html" locals='{
+                "title": "Basler Läckerli",
+                "image": "./images/leckerli.jpg",
+                "alt": "Galletas Läckerli",
+                "description": "Galletas duras de miel, nueces y especias, típicas de Basilea.",
+                "link": "#"
+              }'></include>
+              
+              <include src="src/recipe-card.html" locals='{
+                "title": "Bircher Müesli",
+                "image": "./images/muesli.jpg",
+                "alt": "Plato de Bircher Müesli",
+                "description": "Mezcla de copos de avena, frutas y frutos secos, aderezada con yogur y miel.",
+                "link": "#"
+              }'></include>
+              
+              <include src="src/recipe-card.html" locals='{
+                "title": "Fondue chinoise",
+                "image": "./images/fondue-chinoise.jpg",
+                "alt": "Fondue chinoise",
+                "description": "Consiste en cocinar finas láminas de carne en un caldo hirviendo, y acompañarlas con salsas.",
+                "link": "#"
+              }'></include>
+              
+              <include src="src/recipe-card.html" locals='{
+                "title": "Zürcher Geschnetzeltes",
+                "image": "./images/geschnetzeltes.jpg",
+                "alt": "Plato de Zürcher Geschnetzeltes",
+                "description": "Tiras de ternera cocinadas en una salsa cremosa de vino blanco y setas, acompañadas de rösti.",
+                "link": "#"
+              }'></include>
+
         </div>
     </main>
 
