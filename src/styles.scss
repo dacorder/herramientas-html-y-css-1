@@ -50,6 +50,10 @@ body {
 main {
   flex: 1;
   padding: $spacing-md;
+
+  p {
+    margin-bottom: $spacing-md;
+  }
 }
 
 header {
@@ -189,6 +193,31 @@ h1 {
     align-items: center;
     padding: 10px;
     color: $color-surface;
+  }
+}
+
+.links {
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-md;
+
+    .feather {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-surface;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 }
 
