@@ -131,6 +131,34 @@ header {
   }
 }
 
+.hero {
+  position: relative;
+  background-color: $color-primary;
+  width: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.hero-image {
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  clip-path: polygon(
+    10% 35%, 35% 35%,
+    35% 10%, 65% 10%,
+    65% 35%, 90% 35%,
+    90% 65%, 65% 65%,
+    65% 90%, 35% 90%,
+    35% 65%, 10% 65%
+  );
+}
+
 footer {
   background-color: $color-surface;
   color: $color-secondary;
