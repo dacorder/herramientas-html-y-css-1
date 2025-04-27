@@ -5,7 +5,18 @@
         </a>
     </h2>
     <a class="image-link" href="{{ link }}">
-        <img src="{{ image }}" alt="{{ alt }}">
+        <img 
+            srcset="{{ image }}-large.jpg 1024w,
+                    {{ image }}-medium.jpg 960w,
+                    {{ image }}-small.jpg 480w"
+
+            sizes="(min-width: 1025px) 25vw,
+                   (min-width: 768px, max-width: 1024px) 33.3vw,
+                   100vw"
+                   
+            src="{{ image }}-medium.jpg"
+            alt="{{ alt }}">
+
     </a>
     <p> {{ description }}</p>
     <a class="internal-link" href="{{ link }}">
