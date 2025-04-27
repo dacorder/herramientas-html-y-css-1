@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="100" viewBox="0 0 320 100">
+  <!-- Capsule Background -->
+  <rect x="10" y="10" rx="10" ry="10" width="300" height="60" fill="#e60301">
+    <animate 
+      attributeName="opacity" 
+      from="0" 
+      to="1" 
+      dur="1s" 
+      fill="freeze" />
+  </rect>
+
+  <!-- Small Swiss Flag -->
+  <g transform="translate(40, 40)" opacity="0">
+    <rect x="-20" y="-40" width="40" height="40" fill="#e60301" stroke="white" stroke-width="2" />
+    <rect x="-6" y="-34" width="12" height="28" fill="white" />
+    <rect x="-14" y="-26" width="28" height="12" fill="white" />
+    <animate 
+      attributeName="opacity" 
+      from="0" 
+      to="1" 
+      dur="1s" 
+      begin="0.5s" 
+      fill="freeze" />
+    <animateTransform 
+      attributeName="transform"
+      type="translate"
+      from="40 70" 
+      to="40 60" 
+      dur="0.5s" 
+      begin="0.5s" 
+      fill="freeze" />
+  </g>
+
+  <!-- Text "La Codina Suiza" -->
+  <text x="180" y="50" font-size="30" font-family="Arial, sans-serif" fill="white" text-anchor="middle" opacity="0">
+    La Cocina Suiza
+    <animate 
+      attributeName="opacity" 
+      from="0" 
+      to="1" 
+      dur="1s" 
+      begin="0.7s" 
+      fill="freeze" />
+    <animateTransform 
+      attributeName="transform"
+      type="translate"
+      from="0 10" 
+      to="0 0" 
+      dur="0.5s" 
+      begin="0.7s" 
+      fill="freeze" />
+  </text>
+</svg>
