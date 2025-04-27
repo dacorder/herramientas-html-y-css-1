@@ -132,6 +132,12 @@ header {
 }
 
 .hero {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-container {
   position: relative;
   background-color: $color-primary;
   width: 120px;
@@ -139,7 +145,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   border-radius: 20px;
 }
 
@@ -157,6 +162,10 @@ header {
     65% 90%, 35% 90%,
     35% 65%, 10% 65%
   );
+}
+
+.hero-banner {
+  max-width: 100%;
 }
 
 footer {
@@ -208,6 +217,11 @@ h1 {
   border: 1px solid $color-muted;
   border-radius: $radius-md;
 
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+
   h2 {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -257,6 +271,11 @@ h1 {
     .feather {
       width: 20px;
       height: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+      transition: transform 0.3s ease;
     }
   }
   
@@ -408,6 +427,11 @@ h1 {
       flex: 0;
       border-top: none;
       padding-top: 0px;
+
+      li:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
     }
   }
 
