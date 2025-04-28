@@ -333,11 +333,19 @@ h1 {
       height: 20px;
     }
   }
+  
+  .details-main-image {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
 
   .image-gallery {
     position: relative;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+    margin-left: 40px;
+    margin-top: 20px;
   }
 
   .siema img {
@@ -372,9 +380,10 @@ h1 {
 
   iframe {
     border: none;
-    width: 90%;
+    width: 80%;
     aspect-ratio: 16/9;
     margin-top: 20px;
+    margin-left: 40px;
   }
 }
 
@@ -404,16 +413,9 @@ h1 {
 
   .details {
 
-    .image-gallery {
+    .image-gallery, iframe {
       max-width: 480px;
       display: block;
-      margin: 0 auto;
-    }
-
-    iframe {
-      max-width: 480px;
-      display: block;
-      margin: 0 auto;
     }
   }
 }
@@ -459,12 +461,7 @@ h1 {
   }
 
   .details {
-    .image-gallery {
-      max-width: 480px;
-      margin: 0;
-    }
-
-    iframe {
+    .image-gallery, iframe {
       max-width: 480px;
     }
   }
