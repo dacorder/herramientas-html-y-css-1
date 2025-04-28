@@ -216,6 +216,9 @@ h1 {
   padding: 1rem;
   border: 1px solid $color-muted;
   border-radius: $radius-md;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 
   &:hover {
     transform: scale(1.02);
@@ -226,6 +229,7 @@ h1 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    max-width: 100%;
 
     a {
       text-decoration: none;
@@ -448,14 +452,10 @@ h1 {
     .recipe-grid {
       justify-content: flex-start;
     }
-
-    .recipe-card {
-      flex: 0 1 calc(25% - 20px); /* Ocupa el 25% menos el espacio del gap */
-    }
   }
 
   .recipe-card {
-    flex: 0 1 calc(33% - 20px); /* Ocupa el 33% menos el espacio del gap */
+    flex: 0 1 calc(25% - 20px); /* Ocupa el 25% menos el espacio del gap */
   }
 
   .details {

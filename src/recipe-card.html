@@ -10,9 +10,9 @@
                     {{ image }}-medium.jpg 960w,
                     {{ image }}-small.jpg 480w"
 
-            sizes="(min-width: 1025px) 25vw,
-                   (min-width: 768px, max-width: 1024px) 33.3vw,
-                   100vw"
+            sizes="(min-width: 1025px) calc(25vw - 20px),
+                   (min-width: 768px) and (max-width: 1024px) calc(50vw - 20px),
+                   calc(100vw - 40px)"
                    
             src="{{ image }}-medium.jpg"
             alt="{{ alt }}">
