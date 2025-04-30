@@ -286,6 +286,16 @@ h1 {
   h2 {
     margin-bottom: 20px;
   }
+
+  .links-icon {
+    width: 80px;
+    margin: 20px;
+  }
+
+  .videos-banner {
+    max-width: 90%;
+    margin: 10px;
+  }
 }
 
 .internal-link {
@@ -409,6 +419,13 @@ h1 {
       margin: 20px auto;
     }
   }
+
+  .links {
+    .videos-banner {
+      max-width: 80%;
+      margin: 20px;
+    }
+  }
 }
 
 /* Estilos para Desktop */
@@ -481,6 +498,13 @@ h1 {
 
     li:last-child::after {
       content: "";
+    }
+  }
+
+  .links {
+    .videos-banner {
+      max-width: 80%;
+      margin: 20px;
     }
   }
 }
