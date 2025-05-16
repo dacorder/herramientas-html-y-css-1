@@ -12,7 +12,7 @@
         
         <picture>
             <source media="(max-width: 767px)" srcset="./images/raclette-portrait.jpg">
-            <img class="details-main-image" src="./images/raclette-landscape.jpg" alt="Plato de Raclette">
+            <img loading="lazy" details-main-image" src="./images/raclette-landscape.jpg" alt="Plato de Raclette">
         </picture>
 
         <h2>
@@ -73,6 +73,7 @@
         </h2>
         <div class="image-gallery">
             <img
+                loading="lazy"
                 srcset="./images/raclette-large.jpg 1024w, 
                         ./images/raclette-medium.jpg 960w, 
                         ./images/raclette-small.jpg 480w"
@@ -82,23 +83,25 @@
 
                 src="./images/raclette-medium.jpg" alt="Plato de Raclette"/>
             <img
-            srcset="./images/raclette-2-large.jpg 1024w, 
-                    ./images/raclette-2-medium.jpg 960w, 
-                    ./images/raclette-2-small.jpg 480w"
-            
-            sizes="(min-width: 768px) calc(33.333% - 10px),
-                   80vw"
-
-            src="./images/raclette-2-medium.jpg" alt="Segundo plato de Raclette"/>
-            <img
-            srcset="./images/raclette-3-large.jpg 1024w, 
-                    ./images/raclette-3-medium.jpg 960w, 
-                    ./images/raclette-3-small.jpg 480w"
-            
-            sizes="(min-width: 768px) calc(33.333% - 10px),
+                loading="lazy"
+                srcset="./images/raclette-2-large.jpg 1024w, 
+                        ./images/raclette-2-medium.jpg 960w, 
+                        ./images/raclette-2-small.jpg 480w"
+                
+                sizes="(min-width: 768px) calc(33.333% - 10px),
                     80vw"
 
-            src="./images/raclette-3-medium.jpg" alt="Tercer plato de Raclette"/>
+                src="./images/raclette-2-medium.jpg" alt="Segundo plato de Raclette"/>
+            <img
+                loading="lazy"
+                srcset="./images/raclette-3-large.jpg 1024w, 
+                        ./images/raclette-3-medium.jpg 960w, 
+                        ./images/raclette-3-small.jpg 480w"
+                
+                sizes="(min-width: 768px) calc(33.333% - 10px),
+                        80vw"
+
+                src="./images/raclette-3-medium.jpg" alt="Tercer plato de Raclette"/>
         </div>
         <h2>
             <i data-feather="film" aria-hidden="true"></i>Video
